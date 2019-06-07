@@ -1,0 +1,24 @@
+{
+  "name": "apollo-claudia",
+  "version": "0.0.0",
+  "main": "src/handler.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "claudia create --name claudia-apollo --region us-east-1 --api-module src/handler",
+    "update": "claudia update",
+    "destroy": "claudia destroy"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "claudia": "^5.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-jlarmst": "^0.0.7",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-react": "^7.13.0"
+  },
+  "dependencies": {
+    "apollo-server-agnostic": "latest",
+    "claudia-api-builder": "^4.1.2",
+    "graphql": "^14.3.1"
+  }
+}
